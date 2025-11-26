@@ -17,17 +17,28 @@ Telegram-bot for weekly monitoring of emotional state, BDI-II score, and therapy
 - python-dotenv
 
 ## ▶️ Running locally
-
+pip install -r requirements.txt
+python mors_depression_bot.py
 
 ## 🖥 Deployment on server (Selectel)
 
-1. Install Python and pip  
-2. Clone the repo:
+Install Python and pip
 
-3. Create virtual environment  
-4. Install requirements  
-5. Create `.env` file:
-6. Set up systemd service for auto-restart
+Clone the repository:
+git clone https://github.com/ponevej-boop/mors-depression-bot
+
+Create virtual environment
+
+Install requirements
+
+Create .env file:
+BOT_TOKEN=your_token
+
+Set up systemd service for auto-restart
 
 ## 📁 File structure
-
+mors-depression-bot/
+├── mors_depression_bot.py
+├── requirements.txt
+├── .gitignore
+└── README.md
