@@ -20,7 +20,12 @@ from telegram.ext import (
     filters,
 )
 
-TOKEN = "7514034246:AAE3GPNYMc2UYoELxTagrYWeICz4S_Pbzzw"
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+TOKEN = os.getenv("BOT_TOKEN")
+
 
 CSV_FILE = "mors_weekly_data.csv"
 USERS_FILE = "mors_users.json"
@@ -519,3 +524,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
