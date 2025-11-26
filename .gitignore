@@ -1,0 +1,5 @@
+__pycache__/
+*.env
+*.log
+mors_weekly_data.csv
+mors_users.json
